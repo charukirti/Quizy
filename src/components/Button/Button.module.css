@@ -1,0 +1,9 @@
+.next {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 2px solid #495057;
+    align-self: flex-end;
+}
