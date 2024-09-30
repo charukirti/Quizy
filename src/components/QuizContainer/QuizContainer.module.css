@@ -1,4 +1,5 @@
 .quizContainer {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -7,5 +8,5 @@
 
 
 .quiz {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: 2rem;
 }
