@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 1,
-      "category": "HTML",
+      "language": "HTML",
       "question": "What does HTML stand for?",
       "options": [
         "Hyper Text Markup Language",
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "category": "HTML",
+      "language": "HTML",
       "question": "Which tag is used to create an unordered list?",
       "options": ["<ol>", "<ul>", "<li>", "<list>"],
       "correctAnswer": 1,
@@ -25,7 +25,7 @@
     },
     {
       "id": 3,
-      "category": "HTML",
+      "language": "HTML",
       "question": "What is the correct HTML element for inserting a line break?",
       "options": ["<break>", "<lb>", "<br>", "<newline>"],
       "correctAnswer": 2,
@@ -34,7 +34,7 @@
     },
     {
       "id": 4,
-      "category": "HTML",
+      "language": "HTML",
       "question": "Which HTML attribute is used to define inline styles?",
       "options": ["class", "styles", "style", "font"],
       "correctAnswer": 2,
@@ -43,7 +43,7 @@
     },
     {
       "id": 5,
-      "category": "HTML",
+      "language": "HTML",
       "question": "What is the purpose of the <aside> element in HTML5?",
       "options": [
         "To create a sidebar",
@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "category": "HTML",
+      "language": "HTML",
       "question": "Which HTML element is used to specify a header for a document or section?",
       "options": ["<head>", "<top>", "<header>", "<section>"],
       "correctAnswer": 2,
@@ -66,7 +66,7 @@
     },
     {
       "id": 7,
-      "category": "HTML",
+      "language": "HTML",
       "question": "What does the 'download' attribute do in an <a> tag?",
       "options": [
         "Specifies that the target will be downloaded when clicked",
@@ -80,7 +80,7 @@
     },
     {
       "id": 8,
-      "category": "HTML",
+      "language": "HTML",
       "question": "Which HTML element is used to specify a footer for a document or section?",
       "options": ["<bottom>", "<footer>", "<section>", "<div>"],
       "correctAnswer": 1,
@@ -89,7 +89,7 @@
     },
     {
       "id": 9,
-      "category": "HTML",
+      "language": "HTML",
       "question": "What is the correct HTML for creating a hyperlink?",
       "options": [
         "<a url='http://www.example.com'>Example</a>",
@@ -103,7 +103,7 @@
     },
     {
       "id": 10,
-      "category": "HTML",
+      "language": "HTML",
       "question": "Which HTML element defines navigation links?",
       "options": ["<navigation>", "<nav>", "<navigate>", "<links>"],
       "correctAnswer": 1,
@@ -112,7 +112,7 @@
     },
     {
       "id": 11,
-      "category": "CSS",
+      "language": "CSS",
       "question": "What does CSS stand for?",
       "options": [
         "Computer Style Sheets",
@@ -126,7 +126,7 @@
     },
     {
       "id": 12,
-      "category": "CSS",
+      "language": "CSS",
       "question": "Which property is used to change the text color of an element?",
       "options": ["text-color", "color", "font-color", "text-style"],
       "correctAnswer": 1,
@@ -135,7 +135,7 @@
     },
     {
       "id": 13,
-      "category": "CSS",
+      "language": "CSS",
       "question": "How do you add a comment in CSS?",
       "options": [
         "// this is a comment",
@@ -149,7 +149,7 @@
     },
     {
       "id": 14,
-      "category": "CSS",
+      "language": "CSS",
       "question": "Which CSS property controls the text size?",
       "options": ["font-size", "text-size", "text-style", "font-style"],
       "correctAnswer": 0,
@@ -158,7 +158,7 @@
     },
     {
       "id": 15,
-      "category": "CSS",
+      "language": "CSS",
       "question": "What is the correct CSS syntax for making all the <p> elements bold?",
       "options": [
         "p {font-weight:bold;}",
@@ -172,7 +172,7 @@
     },
     {
       "id": 16,
-      "category": "CSS",
+      "language": "CSS",
       "question": "How do you display hyperlinks without an underline?",
       "options": [
         "a {underline:none;}",
@@ -186,7 +186,7 @@
     },
     {
       "id": 17,
-      "category": "CSS",
+      "language": "CSS",
       "question": "Which property is used to change the font of an element?",
       "options": ["font-family", "font-style", "font-weight", "font-size"],
       "correctAnswer": 0,
@@ -195,7 +195,7 @@
     },
     {
       "id": 18,
-      "category": "CSS",
+      "language": "CSS",
       "question": "What is the correct CSS syntax to change the color of all <p> elements to red?",
       "options": [
         "p {color: red;}",
@@ -209,7 +209,7 @@
     },
     {
       "id": 19,
-      "category": "CSS",
+      "language": "CSS",
       "question": "Which CSS property is used to control the spacing between elements?",
       "options": ["spacing", "margin", "padding", "border"],
       "correctAnswer": 1,
@@ -218,7 +218,7 @@
     },
     {
       "id": 20,
-      "category": "CSS",
+      "language": "CSS",
       "question": "What does the CSS property 'display: flex' do?",
       "options": [
         "Makes the element flexible",
@@ -232,7 +232,7 @@
     },
     {
       "id": 21,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "Which keyword is used to declare a variable in JavaScript?",
       "options": ["var", "let", "const", "All of the above"],
       "correctAnswer": 3,
@@ -241,7 +241,7 @@
     },
     {
       "id": 22,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "What will be the output of: console.log(typeof [])?",
       "options": ["array", "object", "undefined", "null"],
       "correctAnswer": 1,
@@ -250,7 +250,7 @@
     },
     {
       "id": 23,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "Which method is used to add an element to the end of an array?",
       "options": ["push()", "pop()", "append()", "add()"],
       "correctAnswer": 0,
@@ -259,7 +259,7 @@
     },
     {
       "id": 24,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "What does the '===' operator do?",
       "options": [
         "Assigns a value",
@@ -273,7 +273,7 @@
     },
     {
       "id": 25,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "What is the correct way to write a JavaScript array?",
       "options": [
         "var colors = (1:'red', 2:'green', 3:'blue')",
@@ -287,7 +287,7 @@
     },
     {
       "id": 26,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "Which method is used to remove the last element from an array?",
       "options": ["pop()", "push()", "shift()", "unshift()"],
       "correctAnswer": 0,
@@ -296,7 +296,7 @@
     },
     {
       "id": 27,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "What is the purpose of the 'this' keyword in JavaScript?",
       "options": [
         "It refers to the current function",
@@ -310,7 +310,7 @@
     },
     {
       "id": 28,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "Which function is used to parse a string to an integer in JavaScript?",
       "options": [
         "Integer.parse()",
@@ -324,7 +324,7 @@
     },
     {
       "id": 29,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "What does the 'typeof' operator return for null?",
       "options": ["null", "undefined", "object", "string"],
       "correctAnswer": 2,
@@ -333,7 +333,7 @@
     },
     {
       "id": 30,
-      "category": "JavaScript",
+      "language": "JavaScript",
       "question": "Which method is used to join all elements of an array into a string?",
       "options": ["concat()", "join()", "toString()", "splice()"],
       "correctAnswer": 1,
@@ -342,7 +342,7 @@
     },
     {
       "id": 31,
-      "category": "React",
+      "language": "React",
       "question": "What is React?",
       "options": [
         "A JavaScript library for building user interfaces",
@@ -356,7 +356,7 @@
     },
     {
       "id": 32,
-      "category": "React",
+      "language": "React",
       "question": "What hook is used to perform side effects in a function component?",
       "options": ["useState", "useEffect", "useContext", "useReducer"],
       "correctAnswer": 1,
@@ -365,7 +365,7 @@
     },
     {
       "id": 33,
-      "category": "React",
+      "language": "React",
       "question": "What is JSX?",
       "options": [
         "A JavaScript extension",
@@ -379,7 +379,7 @@
     },
     {
       "id": 34,
-      "category": "React",
+      "language": "React",
       "question": "Which method is used to change state in a React component?",
       "options": [
         "this.state()",
@@ -393,7 +393,7 @@
     },
     {
       "id": 35,
-      "category": "React",
+      "language": "React",
       "question": "What is the purpose of the 'key' prop when rendering a list of elements?",
       "options": [
         "To style the elements",
@@ -407,7 +407,7 @@
     },
     {
       "id": 36,
-      "category": "React",
+      "language": "React",
       "question": "Which lifecycle method is called after a component is rendered for the first time?",
       "options": [
         "componentDidMount",
@@ -421,7 +421,7 @@
     },
     {
       "id": 37,
-      "category": "React",
+      "language": "React",
       "question": "What is the purpose of React fragments?",
       "options": [
         "To group multiple elements without adding extra nodes to the DOM",
@@ -435,7 +435,7 @@
     },
     {
       "id": 38,
-      "category": "React",
+      "language": "React",
       "question": "What is the purpose of the 'useState' hook?",
       "options": [
         "To perform side effects",
@@ -449,7 +449,7 @@
     },
     {
       "id": 39,
-      "category": "React",
+      "language": "React",
       "question": "What is the virtual DOM in React?",
       "options": [
         "A lightweight copy of the actual DOM",
@@ -463,7 +463,7 @@
     },
     {
       "id": 40,
-      "category": "React",
+      "language": "React",
       "question": "Which of the following is used to pass data from parent to child component?",
       "options": ["State", "Props", "Context", "Refs"],
       "correctAnswer": 1,
