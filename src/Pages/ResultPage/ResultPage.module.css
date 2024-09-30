@@ -1,0 +1,35 @@
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.result {
+  border-radius: 100px;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  span {
+    font-size: 2.2rem;
+    margin-right: 4px;
+  }
+}
+.highscore {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.restart {
+    text-align: center;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem;
+    border-radius: 25px;
+    border: 2px solid;
+    margin-bottom: 5rem;
+}
