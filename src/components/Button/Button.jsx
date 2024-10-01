@@ -16,7 +16,8 @@ export default function Button({ dispatch, answer, index, numQuestions }) {
   if (index === numQuestions - 1)
     return (
       <button
-        onClick={() => dispatch({ type: "finish" })}
+        onClick={() => dispatch({ type: "finish_quiz" })}
+        className={styles.next}
       >
         Finish
       </button>

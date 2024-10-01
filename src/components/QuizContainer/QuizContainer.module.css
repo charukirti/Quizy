@@ -1,12 +1,10 @@
 .quizContainer {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-
-
 .quiz {
-    font-size: 2rem;
+  font-size: 2rem;
 }

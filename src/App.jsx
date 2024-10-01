@@ -1,15 +1,15 @@
-import { useState, useEffect, useReducer } from "react";
+import { useEffect, useReducer } from "react";
+import "./App.css";
 
 import Header from "./components/Header/Header";
 import WelcomePage from "./Pages/WelcomePage/WelcomePage";
-import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Main from "./components/Main/Main";
 import QuizContainer from "./components/QuizContainer/QuizContainer";
 import Progress from "./components/Progress/Progress";
 import ResultPage from "./Pages/ResultPage/ResultPage";
 import Loader from "./components/Loader/Loader";
-import Button from "./components/Button/Button";
+import Error from "./components/Error/Error";
 
 const BASE_URL = `http://localhost:3000`;
 
@@ -22,7 +22,11 @@ const initialState = {
   error: null,
   currentQuestionIndex: 0,
   points: 0,
-  highScore: 0,
+  highScores: {
+    easy: { html: 0, css: 0, javascript: 0, react: 0 },
+    medium: { html: 0, css: 0, javascript: 0, react: 0 },
+    hard: { html: 0, css: 0, javascript: 0, react: 0 },
+  },
   secondsRemaining: null,
   answer: null,
 };
@@ -30,7 +34,6 @@ const initialState = {
 function reducer(state, action) {
   switch (action.type) {
     case "data_recived":
-      // console.log(action.payload)
       return { ...state, status: "ready", allQuestions: action.payload };
     case "data_failed":
       return { ...state, status: "error" };
@@ -54,11 +57,8 @@ function reducer(state, action) {
       };
 
     case "new_answer":
-      // const currentQuestion =
-      //   state.filterdQuestions[state.currentQuestionIndex];
-      // const isCorrect = action.payload === currentQuestion.correctAnswer;
       const question = state.filterdQuestions.at(state.currentQuestionIndex);
-      console.log(action.payload);
+
       return {
         ...state,
         answer: action.payload,
@@ -69,7 +69,6 @@ function reducer(state, action) {
       };
 
     case "next_question":
-      console.log(state.currentQuestionIndex);
       return {
         ...state,
         currentQuestionIndex: state.currentQuestionIndex + 1,
@@ -77,17 +76,48 @@ function reducer(state, action) {
       };
 
     case "finish_quiz":
+      const currentScore = state.points;
+      const currentLevel = state.level;
+      const currentLanguage = state.language;
+
+      if (!state.highScores) {
+        state.highScores = {
+          easy: { html: 0, css: 0, javascript: 0 },
+          medium: { html: 0, css: 0, javascript: 0 },
+          hard: { html: 0, css: 0, javascript: 0 },
+        };
+      }
+
+      if (!state.highScores[currentLevel]) {
+        state.highScores[currentLevel] = { html: 0, css: 0, javascript: 0 };
+      }
+
+      if (state.highScores[currentLevel][currentLanguage] === undefined) {
+        state.highScores[currentLevel][currentLanguage] = 0;
+      }
+
+      const currentHighScore = state.highScores[currentLevel][currentLanguage];
+
+      const newHighScore =
+        currentScore > currentHighScore ? currentScore : currentHighScore;
+
       return {
         ...state,
         status: "finished",
-        highScore:
-          state.points > state.highScore ? state.points : state.highScore,
+        highScores: {
+          ...state.highscores,
+          [currentLevel]: {
+            ...state.highScores[currentLevel],
+            [currentLanguage]: newHighScore,
+          },
+        },
       };
 
     case "restart":
       return {
         ...initialState,
         allQuestions: state.allQuestions,
+        highScores: state.highScores,
         status: "ready",
       };
   }
@@ -96,7 +126,6 @@ function reducer(state, action) {
 export default function App() {
   const [
     {
-      allQuestions,
       filterdQuestions,
       level,
       language,
@@ -105,6 +134,7 @@ export default function App() {
       currentQuestionIndex,
       error,
       answer,
+      highScores,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -116,34 +146,30 @@ export default function App() {
   async function fetchQuestions() {
     try {
       const response = await fetch(`${BASE_URL}/questions`);
-      if (!response.ok) {
-        throw new Error("There was an error while fetching questions");
-      }
       const data = await response.json();
-      // console.log(data)
+
       dispatch({ type: "data_recived", payload: data });
     } catch (error) {
-      dispatch({ type: "data_failed", payload: error.message });
-    } finally {
-      console.log("did something");
+      dispatch({ type: "data_failed" });
     }
   }
 
-  const numQuestions = allQuestions.length;
-  console.log(numQuestions);
-  const maxPossiblePoints = allQuestions.reduce(
+  const numQuestions = filterdQuestions.length;
+
+  const maxPossiblePoints = filterdQuestions.reduce(
     (prev, curr) => prev + curr.score,
     0
   );
-  console.log(maxPossiblePoints);
+
   return (
     <div className="app">
       <Header />
       <Main>
+        {status === "loading" && <Loader />}
+        {status === "error" && <Error />}
         {status === "ready" && (
           <WelcomePage level={level} language={language} dispatch={dispatch} />
         )}
-        {/* <Loader/> */}
 
         {status === "active" && (
           <>
@@ -155,17 +181,29 @@ export default function App() {
               filterdQuestions={filterdQuestions[currentQuestionIndex]}
               answer={answer}
               dispatch={dispatch}
-            />
-            <Button
-              dispatch={dispatch}
-              answer={answer}
-              index={currentQuestionIndex}
+              currentQuestionIndex={currentQuestionIndex}
               numQuestions={numQuestions}
+            />
+            <Footer
+              numQuestions={numQuestions}
+              currentQuestionIndex={currentQuestionIndex}
+              answer={answer}
+              dispatch={dispatch}
             />
           </>
         )}
+
+        {status === "finished" && (
+          <ResultPage
+            points={points}
+            maxPossiblePoints={maxPossiblePoints}
+            dispatch={dispatch}
+            highScore={highScores[level][language]}
+            level={level}
+            language={language}
+          />
+        )}
       </Main>
-      <Footer />
     </div>
   );
 }

@@ -1,35 +1,42 @@
-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 .result {
-  border-radius: 100px;
   text-align: center;
-  padding: 2rem 0;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-
-  span {
-    font-size: 2.2rem;
-    margin-right: 4px;
-  }
+  padding: 20px;
+  border-radius: 10px;
 }
-.highscore {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 3rem;
+
+.result h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.score, .percentage {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.highScoreSection {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.highScore {
+  font-weight: bold;
+}
+
+.newRecord {
+  color: #ff4500;
+  font-weight: bold;
 }
 
 .restart {
-    text-align: center;
-    padding: .5rem 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin: 1rem;
-    border-radius: 25px;
-    border: 2px solid;
-    margin-bottom: 5rem;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #000;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
 }
+

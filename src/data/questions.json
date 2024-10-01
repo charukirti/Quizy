@@ -38,57 +38,11 @@
       "question": "Which HTML attribute is used to define inline styles?",
       "options": ["class", "styles", "style", "font"],
       "correctAnswer": 2,
-      "score": 20,
-      "level": "medium"
+      "score": 10,
+      "level": "easy"
     },
     {
       "id": 5,
-      "language": "HTML",
-      "question": "What is the purpose of the <aside> element in HTML5?",
-      "options": [
-        "To create a sidebar",
-        "To define a footer",
-        "To create a header",
-        "To define a navigation menu"
-      ],
-      "correctAnswer": 0,
-      "score": 20,
-      "level": "medium"
-    },
-    {
-      "id": 6,
-      "language": "HTML",
-      "question": "Which HTML element is used to specify a header for a document or section?",
-      "options": ["<head>", "<top>", "<header>", "<section>"],
-      "correctAnswer": 2,
-      "score": 20,
-      "level": "medium"
-    },
-    {
-      "id": 7,
-      "language": "HTML",
-      "question": "What does the 'download' attribute do in an <a> tag?",
-      "options": [
-        "Specifies that the target will be downloaded when clicked",
-        "Opens the link in a new tab",
-        "Defines the URL of the page the link goes to",
-        "Specifies the language of the linked document"
-      ],
-      "correctAnswer": 0,
-      "score": 30,
-      "level": "hard"
-    },
-    {
-      "id": 8,
-      "language": "HTML",
-      "question": "Which HTML element is used to specify a footer for a document or section?",
-      "options": ["<bottom>", "<footer>", "<section>", "<div>"],
-      "correctAnswer": 1,
-      "score": 20,
-      "level": "medium"
-    },
-    {
-      "id": 9,
       "language": "HTML",
       "question": "What is the correct HTML for creating a hyperlink?",
       "options": [
@@ -102,7 +56,30 @@
       "level": "easy"
     },
     {
-      "id": 10,
+      "id": 6,
+      "language": "HTML",
+      "question": "What is the purpose of the <aside> element in HTML5?",
+      "options": [
+        "To create a sidebar",
+        "To define a footer",
+        "To create a header",
+        "To define a navigation menu"
+      ],
+      "correctAnswer": 0,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 7,
+      "language": "HTML",
+      "question": "Which HTML element is used to specify a header for a document or section?",
+      "options": ["<head>", "<top>", "<header>", "<section>"],
+      "correctAnswer": 2,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 8,
       "language": "HTML",
       "question": "Which HTML element defines navigation links?",
       "options": ["<navigation>", "<nav>", "<navigate>", "<links>"],
@@ -111,7 +88,95 @@
       "level": "medium"
     },
     {
+      "id": 9,
+      "language": "HTML",
+      "question": "What is the purpose of the <canvas> element?",
+      "options": [
+        "To display database records",
+        "To create draggable elements",
+        "To draw graphics via scripting",
+        "To create input forms"
+      ],
+      "correctAnswer": 2,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 10,
+      "language": "HTML",
+      "question": "Which attribute is used to specify that an input field must be filled out?",
+      "options": ["placeholder", "required", "validate", "important"],
+      "correctAnswer": 1,
+      "score": 20,
+      "level": "medium"
+    },
+    {
       "id": 11,
+      "language": "HTML",
+      "question": "What does the 'download' attribute do in an <a> tag?",
+      "options": [
+        "Specifies that the target will be downloaded when clicked",
+        "Opens the link in a new tab",
+        "Defines the URL of the page the link goes to",
+        "Specifies the language of the linked document"
+      ],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 12,
+      "language": "HTML",
+      "question": "What is the purpose of the 'srcset' attribute in the <img> tag?",
+      "options": [
+        "To specify multiple image sources for different screen sizes",
+        "To set the source of the image",
+        "To define a set of scripts to be loaded",
+        "To create a slideshow of images"
+      ],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 13,
+      "language": "HTML",
+      "question": "Which of the following is true about localStorage in HTML5?",
+      "options": [
+        "The data is sent to the server",
+        "The data is lost when the browser window is closed",
+        "The data is never expired",
+        "The data is encrypted automatically"
+      ],
+      "correctAnswer": 2,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 14,
+      "language": "HTML",
+      "question": "What is the purpose of the <track> tag in HTML5?",
+      "options": [
+        "To specify multiple audio tracks",
+        "To define a visible track for media elements",
+        "To specify text tracks for media elements",
+        "To create a racing game track"
+      ],
+      "correctAnswer": 2,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 15,
+      "language": "HTML",
+      "question": "Which of the following is NOT a valid HTML5 semantic element?",
+      "options": ["<article>", "<aside>", "<details>", "<section>"],
+      "correctAnswer": 3,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 16,
       "language": "CSS",
       "question": "What does CSS stand for?",
       "options": [
@@ -125,7 +190,7 @@
       "level": "easy"
     },
     {
-      "id": 12,
+      "id": 17,
       "language": "CSS",
       "question": "Which property is used to change the text color of an element?",
       "options": ["text-color", "color", "font-color", "text-style"],
@@ -134,7 +199,7 @@
       "level": "easy"
     },
     {
-      "id": 13,
+      "id": 18,
       "language": "CSS",
       "question": "How do you add a comment in CSS?",
       "options": [
@@ -148,7 +213,7 @@
       "level": "easy"
     },
     {
-      "id": 14,
+      "id": 19,
       "language": "CSS",
       "question": "Which CSS property controls the text size?",
       "options": ["font-size", "text-size", "text-style", "font-style"],
@@ -157,21 +222,16 @@
       "level": "easy"
     },
     {
-      "id": 15,
+      "id": 20,
       "language": "CSS",
-      "question": "What is the correct CSS syntax for making all the <p> elements bold?",
-      "options": [
-        "p {font-weight:bold;}",
-        "p {text-size:bold;}",
-        "<p style='font-size:bold;'>",
-        "p {text-style:bold;}"
-      ],
+      "question": "How do you select an element with id 'demo'?",
+      "options": ["#demo", ".demo", "*demo", "demo"],
       "correctAnswer": 0,
-      "score": 20,
-      "level": "medium"
+      "score": 10,
+      "level": "easy"
     },
     {
-      "id": 16,
+      "id": 21,
       "language": "CSS",
       "question": "How do you display hyperlinks without an underline?",
       "options": [
@@ -185,53 +245,113 @@
       "level": "medium"
     },
     {
-      "id": 17,
+      "id": 22,
       "language": "CSS",
-      "question": "Which property is used to change the font of an element?",
-      "options": ["font-family", "font-style", "font-weight", "font-size"],
-      "correctAnswer": 0,
-      "score": 10,
-      "level": "easy"
-    },
-    {
-      "id": 18,
-      "language": "CSS",
-      "question": "What is the correct CSS syntax to change the color of all <p> elements to red?",
+      "question": "How do you make each word in a text start with a capital letter?",
       "options": [
-        "p {color: red;}",
-        "all.p {color: red;}",
-        "<p style='color:red;'>",
-        "p.all {color: red;}"
+        "text-transform:capitalize",
+        "transform:capitalize",
+        "text-style:capitalize",
+        "You can't do that with CSS"
       ],
       "correctAnswer": 0,
       "score": 20,
       "level": "medium"
     },
     {
-      "id": 19,
+      "id": 23,
       "language": "CSS",
-      "question": "Which CSS property is used to control the spacing between elements?",
-      "options": ["spacing", "margin", "padding", "border"],
+      "question": "Which property is used to change the left margin of an element?",
+      "options": ["padding-left", "margin-left", "indent", "left-margin"],
       "correctAnswer": 1,
       "score": 20,
       "level": "medium"
     },
     {
-      "id": 20,
+      "id": 24,
       "language": "CSS",
-      "question": "What does the CSS property 'display: flex' do?",
+      "question": "How do you group selectors?",
       "options": [
-        "Makes the element flexible",
-        "Hides the element",
-        "Creates a flexbox container",
-        "Changes the element's font to a flex font"
+        "Separate each selector with a comma",
+        "Separate each selector with a plus sign",
+        "Separate each selector with a space",
+        "You can't group selectors"
+      ],
+      "correctAnswer": 0,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 25,
+      "language": "CSS",
+      "question": "What is the default value of the position property?",
+      "options": ["relative", "fixed", "absolute", "static"],
+      "correctAnswer": 3,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 26,
+      "language": "CSS",
+      "question": "What is the purpose of the z-index property in CSS?",
+      "options": [
+        "To count the number of elements",
+        "To set the magnification level of an element",
+        "To specify the stack order of an element",
+        "To set the zoom level of the page"
       ],
       "correctAnswer": 2,
       "score": 30,
       "level": "hard"
     },
     {
-      "id": 21,
+      "id": 27,
+      "language": "CSS",
+      "question": "Which CSS property is used to specify the stack order of an element?",
+      "options": ["z-index", "stack-order", "position", "overflow"],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 28,
+      "language": "CSS",
+      "question": "What does the 'C' in CSS stand for?",
+      "options": ["Cascading", "Colorful", "Creative", "Centralized"],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 29,
+      "language": "CSS",
+      "question": "Which of the following is true about CSS flexbox?",
+      "options": [
+        "It's a one-dimensional layout model",
+        "It's only for vertical alignment",
+        "It requires JavaScript to work",
+        "It's not supported in modern browsers"
+      ],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 30,
+      "language": "CSS",
+      "question": "What is the purpose of the 'box-sizing' property in CSS?",
+      "options": [
+        "To create a box around an element",
+        "To change how the total width and height of an element is calculated",
+        "To set the size of the content box",
+        "To specify the color of the border box"
+      ],
+      "correctAnswer": 1,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 31,
       "language": "JavaScript",
       "question": "Which keyword is used to declare a variable in JavaScript?",
       "options": ["var", "let", "const", "All of the above"],
@@ -240,16 +360,7 @@
       "level": "easy"
     },
     {
-      "id": 22,
-      "language": "JavaScript",
-      "question": "What will be the output of: console.log(typeof [])?",
-      "options": ["array", "object", "undefined", "null"],
-      "correctAnswer": 1,
-      "score": 20,
-      "level": "medium"
-    },
-    {
-      "id": 23,
+      "id": 32,
       "language": "JavaScript",
       "question": "Which method is used to add an element to the end of an array?",
       "options": ["push()", "pop()", "append()", "add()"],
@@ -258,21 +369,7 @@
       "level": "easy"
     },
     {
-      "id": 24,
-      "language": "JavaScript",
-      "question": "What does the '===' operator do?",
-      "options": [
-        "Assigns a value",
-        "Compares value and type",
-        "Compares only value",
-        "Logical AND"
-      ],
-      "correctAnswer": 1,
-      "score": 20,
-      "level": "medium"
-    },
-    {
-      "id": 25,
+      "id": 33,
       "language": "JavaScript",
       "question": "What is the correct way to write a JavaScript array?",
       "options": [
@@ -286,30 +383,62 @@
       "level": "easy"
     },
     {
-      "id": 26,
+      "id": 34,
       "language": "JavaScript",
-      "question": "Which method is used to remove the last element from an array?",
-      "options": ["pop()", "push()", "shift()", "unshift()"],
-      "correctAnswer": 0,
+      "question": "How do you write a comment in JavaScript?",
+      "options": [
+        "<!-- This is a comment -->",
+        "// This is a comment",
+        "' This is a comment",
+        "/* This is a comment */"
+      ],
+      "correctAnswer": 1,
       "score": 10,
       "level": "easy"
     },
     {
-      "id": 27,
+      "id": 35,
       "language": "JavaScript",
-      "question": "What is the purpose of the 'this' keyword in JavaScript?",
-      "options": [
-        "It refers to the current function",
-        "It refers to the global object",
-        "It refers to the object that owns the current code",
-        "It is used to create new objects"
-      ],
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": ["*", "-", "=", "x"],
       "correctAnswer": 2,
-      "score": 30,
-      "level": "hard"
+      "score": 10,
+      "level": "easy"
     },
     {
-      "id": 28,
+      "id": 36,
+      "language": "JavaScript",
+      "question": "What will be the output of: console.log(typeof [])?",
+      "options": ["array", "object", "undefined", "null"],
+      "correctAnswer": 1,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 37,
+      "language": "JavaScript",
+      "question": "What does the '===' operator do?",
+      "options": [
+        "Assigns a value",
+        "Compares value and type",
+        "Compares only value",
+        "Logical AND"
+      ],
+      "correctAnswer": 1,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 38,
+      "language": "JavaScript",
+      "question": "Which method is used to remove the last element from an array?",
+      "options": ["pop()", "push()", "shift()", "unshift()"],
+      "correctAnswer": 0,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 39,
       "language": "JavaScript",
       "question": "Which function is used to parse a string to an integer in JavaScript?",
       "options": [
@@ -323,7 +452,21 @@
       "level": "medium"
     },
     {
-      "id": 29,
+      "id": 40,
+      "language": "JavaScript",
+      "question": "What is the purpose of the 'this' keyword in JavaScript?",
+      "options": [
+        "It refers to the current function",
+        "It refers to the global object",
+        "It refers to the object that owns the current code",
+        "It is used to create new objects"
+      ],
+      "correctAnswer": 2,
+      "score": 20,
+      "level": "medium"
+    },
+    {
+      "id": 41,
       "language": "JavaScript",
       "question": "What does the 'typeof' operator return for null?",
       "options": ["null", "undefined", "object", "string"],
@@ -332,16 +475,58 @@
       "level": "hard"
     },
     {
-      "id": 30,
+      "id": 42,
       "language": "JavaScript",
-      "question": "Which method is used to join all elements of an array into a string?",
-      "options": ["concat()", "join()", "toString()", "splice()"],
+      "question": "What is a closure in JavaScript?",
+      "options": [
+        "A function with no parameters",
+        "A function with access to variables in its outer scope",
+        "A function that returns an object",
+        "A function that closes the program"
+      ],
       "correctAnswer": 1,
-      "score": 20,
-      "level": "medium"
+      "score": 30,
+      "level": "hard"
     },
     {
-      "id": 31,
+      "id": 43,
+      "language": "JavaScript",
+      "question": "What is the output of: console.log(1 + '2' + '2')?",
+      "options": ["14", "122", "32", "NaN"],
+      "correctAnswer": 1,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 44,
+      "language": "JavaScript",
+      "question": "What is the purpose of the 'use strict' directive?",
+      "options": [
+        "To use strict typing",
+        "To enable strict mode and catch common coding errors",
+        "To restrict the use of certain keywords",
+        "To make the code execute faster"
+      ],
+      "correctAnswer": 1,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 45,
+      "language": "JavaScript",
+      "question": "What is the difference between 'let' and 'var'?",
+      "options": [
+        "'let' is function scoped while 'var' is block scoped",
+        "'let' is block scoped while 'var' is function scoped",
+        "There is no difference",
+        "'let' can be redeclared while 'var' cannot"
+      ],
+      "correctAnswer": 1,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 46,
       "language": "React",
       "question": "What is React?",
       "options": [
@@ -355,16 +540,7 @@
       "level": "easy"
     },
     {
-      "id": 32,
-      "language": "React",
-      "question": "What hook is used to perform side effects in a function component?",
-      "options": ["useState", "useEffect", "useContext", "useReducer"],
-      "correctAnswer": 1,
-      "score": 20,
-      "level": "medium"
-    },
-    {
-      "id": 33,
+      "id": 47,
       "language": "React",
       "question": "What is JSX?",
       "options": [
@@ -374,13 +550,64 @@
         "A CSS preprocessor"
       ],
       "correctAnswer": 0,
+      "score": 10,
+      "level": "easy"
+    },
+    {
+      "id": 48,
+      "language": "React",
+      "question": "What is the purpose of the 'render' method in a React component?",
+      "options": [
+        "To update the component's state",
+        "To render HTML to the DOM",
+        "To handle events",
+        "To make API calls"
+      ],
+      "correctAnswer": 1,
+      "score": 10,
+      "level": "easy"
+    },
+    {
+      "id": 49,
+      "language": "React",
+      "question": "How do you create a functional component in React?",
+      "options": [
+        "class MyComponent extends React.Component",
+        "function MyComponent()",
+        "const MyComponent = () =>",
+        "Both B and C"
+      ],
+      "correctAnswer": 3,
+      "score": 10,
+      "level": "easy"
+    },
+    {
+      "id": 50,
+      "language": "React",
+      "question": "What is the purpose of 'props' in React?",
+      "options": [
+        "To manage component state",
+        "To pass data from parent to child components",
+        "To handle events",
+        "To make API calls"
+      ],
+      "correctAnswer": 1,
+      "score": 10,
+      "level": "easy"
+    },
+    {
+      "id": 51,
+      "language": "React",
+      "question": "What hook is used to perform side effects in a function component?",
+      "options": ["useState", "useEffect", "useContext", "useReducer"],
+      "correctAnswer": 1,
       "score": 20,
       "level": "medium"
     },
     {
-      "id": 34,
+      "id": 52,
       "language": "React",
-      "question": "Which method is used to change state in a React component?",
+      "question": "Which method is used to change state in a class component?",
       "options": [
         "this.state()",
         "this.setState()",
@@ -392,7 +619,7 @@
       "level": "medium"
     },
     {
-      "id": 35,
+      "id": 53,
       "language": "React",
       "question": "What is the purpose of the 'key' prop when rendering a list of elements?",
       "options": [
@@ -402,25 +629,11 @@
         "To make elements clickable"
       ],
       "correctAnswer": 1,
-      "score": 30,
-      "level": "hard"
+      "score": 20,
+      "level": "medium"
     },
     {
-      "id": 36,
-      "language": "React",
-      "question": "Which lifecycle method is called after a component is rendered for the first time?",
-      "options": [
-        "componentDidMount",
-        "componentWillMount",
-        "componentDidUpdate",
-        "componentWillUpdate"
-      ],
-      "correctAnswer": 0,
-      "score": 30,
-      "level": "hard"
-    },
-    {
-      "id": 37,
+      "id": 54,
       "language": "React",
       "question": "What is the purpose of React fragments?",
       "options": [
@@ -430,11 +643,11 @@
         "To manage state in functional components"
       ],
       "correctAnswer": 0,
-      "score": 30,
-      "level": "hard"
+      "score": 20,
+      "level": "medium"
     },
     {
-      "id": 38,
+      "id": 55,
       "language": "React",
       "question": "What is the purpose of the 'useState' hook?",
       "options": [
@@ -448,7 +661,7 @@
       "level": "medium"
     },
     {
-      "id": 39,
+      "id": 56,
       "language": "React",
       "question": "What is the virtual DOM in React?",
       "options": [
@@ -462,13 +675,60 @@
       "level": "hard"
     },
     {
-      "id": 40,
+      "id": 57,
       "language": "React",
-      "question": "Which of the following is used to pass data from parent to child component?",
-      "options": ["State", "Props", "Context", "Refs"],
+      "question": "What is the purpose of the 'useCallback' hook?",
+      "options": [
+        "To memoize functions",
+        "To create side effects",
+        "To manage state",
+        "To handle routing"
+      ],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 58,
+      "language": "React",
+      "question": "What is the difference between 'controlled' and 'uncontrolled' components?",
+      "options": [
+        "Controlled components manage their own state, uncontrolled don't",
+        "Uncontrolled components manage their own state, controlled don't",
+        "Controlled components are functional, uncontrolled are class-based",
+        "There is no difference"
+      ],
       "correctAnswer": 1,
-      "score": 20,
-      "level": "medium"
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 59,
+      "language": "React",
+      "question": "What is the purpose of the 'useRef' hook?",
+      "options": [
+        "To create a reference to DOM elements",
+        "To manage state",
+        "To handle side effects",
+        "To optimize rendering"
+      ],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
+    },
+    {
+      "id": 60,
+      "language": "React",
+      "question": "What is the purpose of 'React.memo'?",
+      "options": [
+        "To memoize components",
+        "To create memoized values",
+        "To handle memory management",
+        "To create refs"
+      ],
+      "correctAnswer": 0,
+      "score": 30,
+      "level": "hard"
     }
   ]
 }
