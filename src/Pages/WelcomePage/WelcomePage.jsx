@@ -14,7 +14,7 @@ export default function WelcomePage({ level, language, dispatch }) {
   }
   return (
     <section className={styles.welcome}>
-      <h1>Welcome to the Quizy App</h1>
+      <h1>Welcome to the Quiz App</h1>
       <div className={styles.controls}>
         <div>
           <label htmlFor="language">Select Language: </label>

@@ -1,5 +1,6 @@
 header {
-  width: 100%;
+ align-self: flex-start;
+ margin-left: 1rem;
 
   h1 {
     font-size: clamp(2rem, 5vw, 4rem);

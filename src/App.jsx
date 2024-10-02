@@ -13,6 +13,8 @@ import Error from "./components/Error/Error";
 
 const BASE_URL = `http://localhost:3000`;
 
+const SECS_PER_QUESTION = 60;
+
 const initialState = {
   allQuestions: [],
   filterdQuestions: [],
@@ -54,6 +56,7 @@ function reducer(state, action) {
         filterdQuestions,
         currentQuestionIndex: 0,
         points: 0,
+        secondsRemaining: filterdQuestions.length * SECS_PER_QUESTION,
       };
 
     case "new_answer":
@@ -120,6 +123,16 @@ function reducer(state, action) {
         highScores: state.highScores,
         status: "ready",
       };
+
+    case "TICK":
+      return {
+        ...state,
+        secondsRemaining: state.secondsRemaining - 1,
+        status: state.secondsRemaining === 0 ? "finished" : state.status,
+      };
+
+    default:
+      throw new Error("Unkown action");
   }
 }
 
@@ -135,6 +148,7 @@ export default function App() {
       error,
       answer,
       highScores,
+      secondsRemaining,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -176,6 +190,8 @@ export default function App() {
             <Progress
               currentQuestionIndex={currentQuestionIndex}
               numQuestions={numQuestions}
+              dispatch={dispatch}
+              secondsRemaining={secondsRemaining}
             />
             <QuizContainer
               filterdQuestions={filterdQuestions[currentQuestionIndex]}

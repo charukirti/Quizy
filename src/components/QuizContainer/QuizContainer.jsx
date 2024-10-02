@@ -1,12 +1,9 @@
-import Button from "../Button/Button";
 import Options from "../Options/Options";
 import styles from "./QuizContainer.module.css";
 export default function QuizContainer({
   filterdQuestions,
   answer,
   dispatch,
-  currentQuestionIndex,
-  numQuestions,
 }) {
   return (
     <div className={styles.quizContainer}>
@@ -17,12 +14,7 @@ export default function QuizContainer({
         dispatch={dispatch}
       />
 
-      {/* <Button
-        dispatch={dispatch}
-        answer={answer}
-        index={currentQuestionIndex}
-        numQuestions={numQuestions}
-      /> */}
+     
     </div>
   );
 }
