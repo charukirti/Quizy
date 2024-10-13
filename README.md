@@ -2,11 +2,13 @@
 
 Created by using React JS
 
-## Concepts used
+## run these commands to see output
 
-- useReducer
-- contextAPI
-- custom hooks
+```
+npm run dev
+```
 
-any many more...
 
+```
+npm run server
+```
